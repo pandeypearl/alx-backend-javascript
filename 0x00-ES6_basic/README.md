@@ -1,8 +1,6 @@
 # 0x00. ES6 Basics
 
-## Tasks
-
-### 0. Const or let?
+## TASKS
 
 ### 1. Block Scope
 
@@ -27,3 +25,6 @@
 ### 11. Iterator
 
 ### 12. Let's create a report object
+
+
+## ADVANCED TASKS

@@ -8,12 +8,12 @@ export default function createIteratorObject(report) {
   return {
     next() {
       if (currIndex < maxIndex) {
-        const result = { value: all[currIndex], done: flase };
+        const result = { value: all[currIndex], done: false };
         currIndex += 1;
         return result;
-    }
-    return { value: null, done: true };
+      }
+      return { value: null, done: true };
+    },
+    [Symbol.iterator]: () => this.next(),
   };
-  [Symbol.iterator]: () => this.next(),
- };
 }

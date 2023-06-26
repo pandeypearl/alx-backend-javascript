@@ -15,5 +15,5 @@ export default function createIteratorObject(report) {
     return { value: null, done: true };
   };
   [Symbol.iterator]: () => this.next(),
-  };
+ };
 }

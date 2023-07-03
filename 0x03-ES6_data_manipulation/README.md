@@ -1,9 +1,9 @@
 # 0x03. ES6 data manipulation
 
 JavaScript tasks focussing on the follwing concepts:
-	x How to use map, filter and reduce on arrays
-	x Typed arrays
-	x The Set, Map, and Weak link data structures
+	+ How to use map, filter and reduce on arrays
+	+ Typed arrays
+	+ The Set, Map, and Weak link data structures
 
 ## Tasks
 

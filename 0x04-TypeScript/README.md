@@ -237,3 +237,20 @@ file: [Cpp.ts](task_4/js/subjects/Cpp.ts), [Java.ts](task_4/js/subjects/Java.ts)
 + for React subject, log to the console React, set cTeacher as the teacher, call the two methods getRequirements and getAvailableTeacher, and print the strings they return
 
 file: [main.ts](task_4/js/main.ts)
+
+
+### 11. Brand convention & Nominal typing
+Create a directory task_5 and copy these configuration files into the root of task_5: package.json, tsconfig.json, webpack.config.js
+
+Create two interfaces MajorCredits and MinorCredits in task_5/js/main.ts:
+
+   + Each interface defines a number named credits
+   + Add a brand property to each interface in order to uniquely identify each of them
+
+Create two functions named sumMajorCredits and sumMinorCredits in task_5/js/main.ts:
+
+   + Each function takes two arguments subject1 and subject2
+   + sumMajorCredits returns MajorCredits value and sumMinorCredits returns MinorCredits value
+   + Each function sums the credits of the two subjects
+
+file: [main.ts](task_5/js/main.ts)

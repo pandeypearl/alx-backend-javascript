@@ -20,3 +20,35 @@ export interface printTeacherFunction {
 export function printTeacher(firstName: string, lastName: string): string {
   return `${firstName[0]}. ${lastName}`;
 }
+
+// Student Class Constructor
+export interface NStudentClassConstructor {
+  new (firstName: string, lastName: string): NStudentClass;
+}
+
+export interface NStudentClass {
+  workOnHomeWork(): string;
+  displayName(): string;
+}
+
+export class StudentClass implements NStudentClass {
+  private _firstName!: string;
+  private _lastName!: string;
+
+  constructor(firstName: string, lastName: string) {
+    this._firstName = firstName;
+    this._lastName = lastName;
+  }
+
+  workOnHomework() {
+    return 'Currently working';
+  }
+
+  displayName() {
+    return this._firstName;
+  }
+}
+
+export function createStudent(ctor: NStudentClassConstructor, firstName: string, lastName: string): NStudentClass {
+ return new ctor(firstName, lastName);
+}

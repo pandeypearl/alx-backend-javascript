@@ -1,8 +1,8 @@
 /**
  * More complex http server using node HTTP module
  */
-const http = require('http');
 const fs = require('fs');
+const http = require('http');
 
 const hostname = '127.0.0.1';
 const port = 1245;
@@ -28,7 +28,7 @@ function countStudents(path) {
         });
         let str = `Number of students: ${cs.length + swe.length}\n`;
         str += `Number of students in CS: ${cs.length}. List: ${cs.join(', ')}\n`;
-        str += `Number of students in swe: ${swe.length}. List: ${swe.join(', ')}\n`;
+        str += `Number of students in SWE: ${swe.length}. List: ${swe.join(', ')}\n`;
         resolve(str);
       }
     });

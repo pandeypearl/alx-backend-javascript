@@ -12,11 +12,11 @@ function countStudents(filepath) {
     throw new Error('Cannot load the database');
   }
 
-  stRecords = content.split('\n');
+  const stRecords = content.split('\n');
   const cs = [];
   const swe = [];
 
-  records.forEach((stRecord) => {
+  stRecords.forEach((stRecord) => {
     const field = stRecord.split(',');
 
     if (field !== [] && field !== null) {

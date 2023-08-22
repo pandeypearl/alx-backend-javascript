@@ -27,7 +27,7 @@ function countStudents(path) {
           }
         });
 
-        let str = `Number of students: ${cs.length = swe.length}\n`;
+        let str = `Number of students: ${cs.length + swe.length}\n`;
         str += `Number of students in CS: ${cs.length}. List: ${cs.join(', ')}\n`;
         str += `Number of students in SWE: ${swe.length}. List: ${swe.join(', ')}\n`;
         resolve(str);

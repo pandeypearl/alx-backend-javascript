@@ -14,22 +14,22 @@ function countStudents(path) {
       else {
         const content = records.split('\n');
         const cs = [];
-	const swe = [];
+	      const swe = [];
 
-	content.forEach((record) => {
-	  const field = record.split(',');
-	  if (field !== [] && field !== null) {
-	    if (field[3] === 'CS') {
-	      cs.push(field[0]);
-	    } else if (field[3] ==='SWE') {
-	      swe.push(field[0]);
-	    }
-	  }
-	});
-	let str = `Number of students: ${cs.length + swe.length}\n`;
-	str += `Number of students in CS: ${cs.length}. List: ${cs.join(', ')}\n`;
-	str += `Number of students in swe: ${swe.length}. List: ${swe.join(', ')}\n`;
-	resolve(str);
+        content.forEach((record) => {
+          const field = record.split(',');
+          if (field !== [] && field !== null) {
+            if (field[3] === 'CS') {
+              cs.push(field[0]);
+            } else if (field[3] ==='SWE') {
+              swe.push(field[0]);
+            }
+          }
+        });
+        let str = `Number of students: ${cs.length + swe.length}\n`;
+        str += `Number of students in CS: ${cs.length}. List: ${cs.join(', ')}\n`;
+        str += `Number of students in swe: ${swe.length}. List: ${swe.join(', ')}\n`;
+        resolve(str);
       }
     });
   });

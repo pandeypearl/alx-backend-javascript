@@ -14,14 +14,14 @@ function countStudents(path) {
       else {
         const content = records.split('\n');
         const cs = [];
-	      const swe = [];
+        const swe = [];
 
         content.forEach((record) => {
           const field = record.split(',');
           if (field !== [] && field !== null) {
             if (field[3] === 'CS') {
               cs.push(field[0]);
-            } else if (field[3] ==='SWE') {
+            } else if (field[3] === 'SWE') {
               swe.push(field[0]);
             }
           }

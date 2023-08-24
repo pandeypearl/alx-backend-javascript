@@ -2,7 +2,7 @@ const request = require('request');
 const { expect } = require('chai');
 
 describe('API integration test', () => {
-    const API_URL = 'http://locahost:7865';
+    const API_URL = 'http://localhost:7865';
 
     it('GET / returns correct response', (done) => {
         request.get(`${API_URL}/`, (_err, res, body) => {
@@ -11,4 +11,4 @@ describe('API integration test', () => {
             done();
         });
     });
-});
+}); 

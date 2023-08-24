@@ -8,3 +8,4 @@ ALX Backend Specialization: JavaScript Projects/Tasks
 + [ES6 Classes](0x02-ES6_classes)
 + [ES6 Data Manipulation](0x03-ES6_data_manipulation)
 + [NodeJS Basics](0x05-Node_JS_basic)
++ [Unittests in JS](0x06-unittests_in_js)

@@ -2,14 +2,14 @@
 
 This project covers the following concepts:
 
-+ How to use Mocha to write a test suite
-+ How to use different assertion libraries (Node or Chai)
-+ How to present long test suites
-+ When and how to use spies
-+ When and how to use stubs
-+ What are hooks and when to use them
++ Using Mocha to write a test suite
++ Using different assertion libraries (Node or Chai)
++ Presenting long test suites
++ Use of spies
++ Use of stubs
++ Use of hooks
 + Unit testing with Async functions
-+ How to write integration tests with a small node server
++ Writing integration tests with a small node server
 
 ### Basic test with Mocha and Node assertion library 
 
